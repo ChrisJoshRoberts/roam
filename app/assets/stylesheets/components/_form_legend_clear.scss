@@ -8,3 +8,49 @@
 legend ~ div.form-check:first-of-type {
   clear: left;
 }
+
+.form-container {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 16px 24px;
+
+  h2 {
+    font-family: 'Righteous', cursive;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: #411D96;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  .links-container {
+    text-align: center;
+  }
+
+  a{
+    color: #8d8d8d;
+  }
+
+  a.btn-second{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: #BABAD0;
+    color: #411D96;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: 100%;
+
+  }
+
+}
