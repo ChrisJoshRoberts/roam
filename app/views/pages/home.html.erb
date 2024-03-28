@@ -1,2 +1,19 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+  <h1>Gear for rent</h1>
+  <% @products.each do |product| %>
+    <div class="product-container">
+      <%= image_tag(product.photos[1]) %>
+      <h4>
+        <%= product.category %>
+      </h4>
+      <h1>
+        <%= product.title %>
+      </h1>
+      <h3>
+        <%= product.price %>
+      </h3>
+      <p>
+        <%= product.user.name %> <!--this is the user who owns the product-->
+      </p>
+      <%= link_to "View" %>
+    </div>
+  <% end %>

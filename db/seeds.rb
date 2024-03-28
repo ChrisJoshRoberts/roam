@@ -20,6 +20,23 @@ end
 puts "Creating products..."
 10.times do |i|
   Product.create(
-    
+    title: Faker::Commerce.product_name,
+    description: Faker::Lorem.paragraph,
+    price: Faker::Commerce.price,
+    location: Faker::Address.city,
+    photos: [
+    "https://picsum.photos/1000?random",
+    "https://picsum.photos/1000?random",
+    "https://picsum.photos/1000?random",
+    "https://picsum.photos/1000?random",
+    "https://picsum.photos/1000?random",
+    "https://picsum.photos/1000?random",
+    "https://picsum.photos/1000?random",
+    "https://picsum.photos/1000?random"
+  ],
+    category: ["Surfing", "Skateboarding", "Hiking", "Camping", "Fishing", "Cycling", "Running", "Yoga", "Fitness", "Crossfit","Diving", "Sailing", "Rowing", "Paddleboarding", "Windsurfing", "Kitesurfing", "Rock Climbing", "Trail Running","Yoga"].sample,
+    user_id: User.all.sample.id
+
+
   )
 end

@@ -1,0 +1,15 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin: 16px auto;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  img {
+    border-radius: 8px;
+  }
+
+}
